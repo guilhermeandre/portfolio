@@ -273,3 +273,8 @@ input[type="password"]:focus {
 
 
 }
+
+
+.left {
+  color: var(--color-1)
+}

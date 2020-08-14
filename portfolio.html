@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Guilherme Andre dos Santos" />
-    <meta name="description" content="Guilherme Santos | Portfolio"/>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <nav role="navigation" class="nav-bar">
-        <div class="hyperlinks">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <li><a href="./contact.html">CONTACT</a></li>
-              <li><a href="./resume.html">RESUME</a></li>
-              <li><a href="./portfolio.html">PORTFOLIO</a></li>
-            </ul>
-          </div>          
-          <div class="responsive-links"><a href="./resume.html">RESUME</a></div>
-          <div class="responsive-links"><a href="./portfolio.html">PORTFOLIO</a></div>
-          <div class="responsive-logo"><a href="./index.html"><strong>GUILHERME</strong>the.dev</a></div>            
-          <a href="./contact.html"><input class="login-button responsive-links " type="button" value="CONTACT"></a>           
-          <a href="https://github.com/guilhermeandre.html" target="_blank"><input class=" responsive-links tickets-button " type="button" value="GITHUB"></a>                   
-      </nav>
-    </header>
-    <main>
-      <section class="info">  
-        <h2 class="prices-title">Portfolio:</h2>  
-        <article class="prices-wrapper">       
-          <div class="columns">
-            <ul class="price">
-              <li class="header"><a href="https://guilhermeandre.github.io/composite-project/" target="_blank"><img src="./img/img-01.png" alt=""></a></li>
-              <li class="grey">Travelocity Redesign</li> 
-              <li><p>A redesign proposal to TraveloCity website, adpating it's visual to the website main audience.</p></li>
-            </ul>
-          </div>       
-        <div class="columns">
-          <ul class="price">
-            <li class="header"><a href="https://guilhermeandre.github.io/adidas-landing-page/" target="_blank"><img src="./img/img-01.png" alt=""></a></li>
-            <li class="grey">Adidas Landing Page</li> 
-            <li><p>A simple landing page, desinged to convert user visits into a subscription to Adidas Newsletter</p></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Guilherme Andre dos Santos" />
+  <meta name="description" content="Guilherme Santos | Portfolio" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class="nav-bar">
+      <div class="hyperlinks">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./resume.html">RESUME</a></li>
+            <li><a href="./portfolio.html">PORTFOLIO</a></li>
           </ul>
-        </div>  
+        </div>
+        <div class="responsive-links"><a href="./resume.html">RESUME</a></div>
+        <div class="responsive-links"><a href="./portfolio.html">PORTFOLIO</a></div>
+        <div class="responsive-logo"><a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a></div>
+        <a href="./contact.html"><input class="login-button responsive-links " type="button" value="CONTACT"></a>
+        <a href="https://github.com/guilhermeandre.html" target="_blank"><input
+            class=" responsive-links tickets-button " type="button" value="GITHUB"></a>
+    </nav>
+  </header>
+  <main>
+    <section class="info">
+      <h2 class="prices-title">Portfolio:</h2>
+      <article class="prices-wrapper">
         <div class="columns">
           <ul class="price">
-            <li class="header"><a href="https://guilhermeandre.github.io/adidas-landing-page/" target="_blank"><img src="./img/img-01.png" alt=""></a></li>
-            <li class="grey">Amazon App</li> 
-            <li><p>A fully Amazon Mockup Application implemented using front-end, middleware, and back-end technologies.</p></li>
+            <li class="header"><a href="https://guilhermeandre.github.io/composite-project/" target="_blank"><img
+                  src="./img/projects/travelocity-2.jpg" alt=""></a></li>
+            <li class="grey">Travelocity Redesign</li>
+            <li>
+              <p>A redesign proposal to TraveloCity website, adpating it's visual to the website main audience.</p>
+            </li>
           </ul>
         </div>
         <div class="columns">
           <ul class="price">
-            <li class="header"><a href="https://guilhermeandre.github.io/adidas-landing-page/" target="_blank"><img src="./img/img-01.png" alt=""></a></li>
-            <li class="grey">Adidas Landing Page</li> 
-            <li><p>A simple landing page, desinged to convert user visits into a subscription to Adidas Newsletter</p></li>
+            <li class="header"><a href="https://guilhermeandre.github.io/adidas-landing-page/" target="_blank"><img
+                  src="./img//projects/adidas-2.jpg" alt=""></a></li>
+            <li class="grey">Adidas Landing Page</li>
+            <li>
+              <p>A simple landing page, desinged to convert user visits into a subscription to Adidas Newsletter</p>
+            </li>
           </ul>
-        </div>  
-        </article>  
-      </section>
-    </main>
-    <script src="slides.js"></script>
-  </body>
-  </html>
+        </div>
+        <div class="columns">
+          <ul class="price">
+            <li class="header"><a href="https://mvcappamazon.herokuapp.com/" target="_blank"><img
+                  src="./img//projects/amazon-2.jpg" alt=""></a></li>
+            <li class="grey">Amazon App</li>
+            <li>
+              <p>A fully Amazon Mockup Application implemented using front-end, middleware, and back-end technologies.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price">
+            <li class="header"><a href="https://github.com/guilhermeandre/chat-app" target="_blank"><img
+                  src="./img/projects/chatapp-2.jpg" alt=""></a></li>
+            <li class="grey">Chat App</li>
+            <li>
+              <p>A simple chat app to send and receive messages, using the Socket.io library.</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="whole-page">
+    <nav class="footer">
+      <p class="left">Find more about me on my social medias: </p>
+      <ul>
+        <li><a href="https://www.facebook.com/guilhermefull" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+        </li>
+        <li><a href="https://www.twitter.com/guiafull" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="https://www.github.com/guilhermeandre/" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-andre/" target="_blank"><i
+              class="fa fa-linkedin fa-fw"></i></a>
+        </li>
+
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
