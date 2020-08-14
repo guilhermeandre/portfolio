@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway:wght@300;400;700&display=swap');
 :root {
-  --font-family-titles: 'Luckiest Guy', 'Arial', cursive;
+  --font-family-titles: 'Dosis', 'Arial', sans-serif;
   --font-family-body: 'Raleway', 'Arial', sans-serif;
-  --color-1: #FFE400;
-  --col-gradient: linear-gradient(to right, #FF1497 0%, #f758af 100%);
-  --col-on-accent-1: #FF1497;
-  --color-2: #FFE400;
+  --color-1: #bcc6ff;
+  --col-gradient: linear-gradient(to right, #4d4d4d 0%, #6b6b6b 100%);
+  --col-on-accent-1: #0e4f8b;
+  --color-2: #e9e6e6;
   --col-on-accent-2: #0a1e2c;
-  --color-3: #6a11cb;
+  --color-3: #051679;
 }
 
-html { 
-  background: #FFF6E6;
-  
-}
 
 body {
   color: var(--color-3);
   font-family: var(--font-family-body);
+  /* width: 80%; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -283,7 +282,10 @@ h3, h4,h5, h6 {
 
 #menu li {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.5em;
+  font-family: var(--font-family-body);
+  font-weight: bold;
+
 }
 
 #menuToggle input:checked ~ ul {
@@ -437,6 +439,9 @@ h3, h4,h5, h6 {
 
 @media only screen and (min-width: 769px) {
 
+    main {
+        width: 80%;
+    }
     h2 {
       margin-left: 2rem;
     }
@@ -491,3 +496,76 @@ h3, h4,h5, h6 {
       justify-self: center;
     }
   }
+
+
+  .container{
+    width: 75%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    margin-top: 1em;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color:var(--color-3);
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: var(--col-on-accent-1);
+  }
+  .bar.back::before{
+    background-color: var(--col-on-accent-2);
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  

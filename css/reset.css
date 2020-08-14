@@ -66,6 +66,10 @@ a {
 	color: #333;
 }
 
+a:active{
+  font-weight: bold;
+}
+
 [type="date"]::-webkit-inner-spin-button {
   display: none;
 }

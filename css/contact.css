@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway:wght@300;400;700&display=swap');
 :root {
-  --font-family-titles: 'Luckiest Guy', 'Arial', cursive;
-  --font-family-body: "Raleway", "Arial", sans-serif;
-  --color-1: #ffe400;
-  --col-gradient: linear-gradient(to right, #ff1497 0%, #f758af 100%);
-  --col-on-accent-1: #ff1497;
-  --color-2: #ffe400;
+  --font-family-titles: 'Dosis', 'Arial', sans-serif;
+  --font-family-body: 'Raleway', 'Arial', sans-serif;
+  --color-1: #bcc6ff;
+  --col-gradient: linear-gradient(to right, #4d4d4d 0%, #6b6b6b 100%);
+  --col-on-accent-1: #0e4f8b;
+  --color-2: #e9e6e6;
   --col-on-accent-2: #0a1e2c;
-  --color-3: #6a11cb;
+  --color-3: #051679;
 }
-
 p {
   margin: 0 0 3em 0;
   position: relative;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.mail {
+  display: none;
 }
 
 .info {
@@ -169,6 +179,14 @@ input[type="password"]:focus {
   
 }
 
+.map {
+  width: 100%;
+}
+
+.message {
+  border-radius: 1em;
+}
+
 .submit-button:hover {
   background: var(--color-2);
   color: var(--color-3);
@@ -220,12 +238,13 @@ input[type="password"]:focus {
   .lastname {
     grid-area: b;
   }
-  .adress {
+  .message {
     grid-area: c;
   }
   
-  .adress .input {
+  .message .input {
     width: 42em;
+    height: 10em;
   }
 
   .submit-button {
@@ -237,6 +256,17 @@ input[type="password"]:focus {
 }
 
 @media only screen and (min-width: 769px) {
+  .contact {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .mail{
+    display: block;
+    margin-left: 15em;
+  }
+
   .info {
     display: flex;
     width: 80%;
@@ -271,3 +301,4 @@ input[type="password"]:focus {
 
 
 }
+

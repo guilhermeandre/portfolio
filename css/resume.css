@@ -1,0 +1,106 @@
+p {
+  color: #333;
+  margin: 0;
+  text-align: justify;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  margin-left: 0.7em;
+}
+
+h4 {
+  padding-left: 0;
+  font-size: 1em;
+  margin: 0;
+  color: var(--color-3);
+  font-weight: 700;
+}
+
+
+.container {
+  width: 100%;
+  margin-left: 1.6em;
+  margin-bottom: 1em;
+}
+
+.bar {
+  width: 75%;
+  background-color: #eee;
+  padding: 2px;
+  margin-top: 1em;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.bar::before {
+  content: attr(data-skill);
+  background-color: var(--color-3);
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: var(--col-on-accent-1);
+}
+.bar.back::before {
+  background-color: var(--col-on-accent-2);
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+.subtitle {
+  margin-left: 1em;
+}
+
+
+.skills {
+  display: flex;
+}
+
+.job-duties {
+  list-style: circle;
+}
+
+.background-color {
+  /* background-color: black; */
+  margin-bottom: 0.5em;
+}
+
+.education {
+  display: block;
+  margin-left: 1.5em;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.school {
+  font-weight: 700;
+}
+

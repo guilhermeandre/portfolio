@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway:wght@300;400;700&display=swap');
+:root {
+  --font-family-titles: 'Dosis', 'Arial', sans-serif;
+  --font-family-body: 'Raleway', 'Arial', sans-serif;
+  --color-1: #bcc6ff;
+  --col-gradient: linear-gradient(to right, #4d4d4d 0%, #6b6b6b 100%);
+  --col-on-accent-1: #0e4f8b;
+  --color-2: #e9e6e6;
+  --col-on-accent-2: #0a1e2c;
+  --color-3: #051679;
+}
+p {
+  margin: 0 0 3em 0;
+  position: relative;
+  color: var(--col-on-accent-2);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dates-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices-wrapper {
+  margin: 1em;
+  display: grid;
+  grid-auto-flow: column;
+  overflow: auto;
+}
+
+.register-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 1em;
+  margin-left: 1.25em;
+  margin-right: auto;
+}
+
+.date-button {
+  color: #fff;
+  width: 8em;
+  margin: 1em;
+  background-color: var(--col-on-accent-1);
+  border-style: none;
+  font-size: 1em;
+  font-weight: 700;
+  height: 2.5em;
+  border-radius: 3em;
+  outline: none;
+  cursor: pointer;
+}
+
+.columns {
+  min-width: 12em;
+  background-color: #ddd;
+  margin: 1em;
+  float: left;
+  width: 90%;
+  padding: 0.25em;
+}
+
+.price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  max-width: 25em;
+}
+
+.header {
+  display: flex;
+  min-height: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.price .header {
+  font-family: var(--font-family-titles);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: var(--col-on-accent-2);
+  color: white;
+  font-size: 1.25em;
+}
+
+.price .header.premium {
+  background: rgb(214, 134, 28);
+  background: linear-gradient(
+    270deg,
+    rgba(214, 134, 28, 1) 0%,
+    rgba(228, 201, 42, 1) 100%
+  );
+}
+
+.price .header.full {
+  background: rgb(214, 134, 28);
+  background: linear-gradient(
+    270deg,
+    rgb(214, 28, 68) 0%,
+    rgb(228, 95, 42) 100%
+  );
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 1.25em;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 3em;
+  padding: 0;
+  background-color: var(--color-3);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 3em;
+  outline: none;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-1);
+  color: var(--color-3);
+  font-weight: bolder;
+}
+
+.input {
+  background: #fff;
+  border-radius: 3em;
+  padding: 0.7em 1.5em;
+  height: 3.5em;
+  width: 20em;
+  outline: none;
+}
+.input:focus,
+input[type="password"]:focus {
+  background: #fff;
+}
+
+.submit-button {
+  height: 2.2em;
+  width: 12em;
+  font-size: 1.25em;
+  background: var(--color-3);
+  border-radius: 3em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  
+}
+
+.submit-button:hover {
+  background: var(--color-2);
+  color: var(--color-3);
+  font-weight: bolder;
+}
+
+.submit-button:last-child {
+  margin-bottom: 1em;
+}
+
+.label {
+  font-family: var(--font-family-titles);
+  position: absolute;
+  font-size: 1.25em;
+  left: 1.5em;
+  top: 0.8em;
+  color: #999;
+  font-size: 1em;
+  display: inline-block;
+  padding: 0.25em 0.65em;
+  font-weight: 400;
+  transition: (color 0.3s, top 0.3s, background-color 0.8s);
+}
+.floatLabel {
+  top: -0.7em;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .dates-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+  }
+
+  .register-wrapper {
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d e"
+      ". f";
+  }
+
+  .firstname {
+    grid-area: a;
+  }
+
+  .lastname {
+    grid-area: b;
+  }
+  .adress {
+    grid-area: c;
+  }
+  
+  .adress .input {
+    width: 42em;
+  }
+
+  .submit-button {
+    grid-area: f;
+    margin-right: 0;
+  }
+
+
+}
+
+@media only screen and (min-width: 769px) {
+  .info {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .date-button {
+    font-size: 1.5em;
+  }
+
+  .dates-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0;
+    margin-left: auto;
+  }
+
+  .prices-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .register-wrapper {
+    max-width: 45%;
+    margin-left: auto;
+  }
+
+
+}
